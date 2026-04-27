@@ -1354,7 +1354,7 @@ PLAYER_META["Dummb_duck", ""] = { region:"AU" };
 
         const rankClass = idx === 0 ? "rank1" : idx === 1 ? "rank2" : idx === 2 ? "rank3" : "rankN";
         const region = (dataset.meta[p.name]?.region || PLAYER_META[p.name]?.region || "NA").toUpperCase();
-        const regionClass = region === "EU" ? "rEU" : region === "AS" ? "rAS" : "rNA";
+        const regionClass = region === "EU" ? "rEU" : region === "AS" ? "rAS" : region === "AU" ? "rAU": "rNA";
 
         const title = combatTitle(p.points);
         const nameHTML = highlight(p.name, q);
